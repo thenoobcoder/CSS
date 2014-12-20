@@ -1,6 +1,3 @@
-$(document).ready(function()
-{
-
     function displayDate()
     {
           var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
@@ -28,5 +25,3 @@ $(document).ready(function()
     displayDate();
 
     setInterval(displayDate, 1000);
-
-});
