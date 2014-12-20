@@ -22,7 +22,7 @@ $(document).ready(function()
 
           //alert("DateTime: "+hours+":"+minutes+":"+seconds);
           var clockDiv = document.getElementById("digclock");
-          clockDiv.innerHTML = days[date]+"\n"+hours + ":" + minutes + ":" + seconds + "  "+meridiem;
+          clockDiv.innerHTML = days[date]+"<br />"+hours + ":" + minutes + ":" + seconds + "  "+meridiem;
     }
 
     displayDate();
