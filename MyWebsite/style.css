@@ -3,6 +3,7 @@ body {
 	margin:0;
 	padding:0;
 	height:100%;
+    background:#111;
 }
 #wrapper {
 	min-height:100%;
@@ -153,3 +154,310 @@ float: right;
 }
 
 
+/*=======================================NEW CSS ADDED FOR PROJECTS(STICKER)=====================================================*/
+
+
+#projects h2,p{
+  font-size:100%;
+  font-weight:normal;
+}
+#projects ul,li{
+  list-style:none;
+}
+#projects ul{
+  overflow:hidden;
+  padding:7em;
+}
+#projects ul li a{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+#projects ul li{
+  margin:1em;
+  float:left;
+}
+#projects ul li h2{
+  font-size:140%;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+#projects ul li p{
+  font-family:"Reenie Beanie",arial,sans-serif;
+  font-size:180%;
+}
+#projects ul li a{
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+}
+#projects ul li:nth-child(even) a{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+}
+#projects ul li:nth-child(3n) a{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+#projects ul li:nth-child(5n) a{
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+#projects ul li a:hover,ul li a:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+
+
+/*====================================CONTACT FORM====================================================================*/
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/*html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
+  background-size: cover;
+  height:100%;
+}*/
+
+#feedback-page{
+    text-align:center;
+}
+
+#form-main{
+    width:100%;
+    float:left;
+    padding-top:0px;
+}
+
+#form-div {
+    background-color:rgba(72,72,72,0.4);
+    padding-left:35px;
+    padding-right:35px;
+    padding-top:35px;
+    padding-bottom:50px;
+    width: 450px;
+    float: left;
+    left: 50%;
+    position: absolute;
+  margin-top:30px;
+    margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+    color:#3c3c3c;
+    font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+    font-size: 18px;
+    border-radius: 0;
+    line-height: 22px;
+    background-color: #fbfbfb;
+    padding: 13px 13px 13px 54px;
+    margin-bottom: 10px;
+    width:100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+    background: #fff;
+    box-shadow: 0;
+    border: 3px solid #3498db;
+    color: #3498db;
+    outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+    color:#30aed6;
+    border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#name:focus{    
+    background-size: 30px 30px;
+    background-position: 8px 5px;
+  background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#email{
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#email:focus{
+    background-size: 30px 30px;
+  background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#projectItem{
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#comment{
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+    background-color:white;
+}
+
+#button-blue{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    float:left;
+    width: 100%;
+    border: #fbfbfb solid 4px;
+    cursor:pointer;
+    background-color: #3498db;
+    color:white;
+    font-size:24px;
+    padding-top:22px;
+    padding-bottom:22px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+    background-color: rgba(0,0,0,0);
+    color: #0493bd;
+}
+    
+.submit:hover {
+    color: #3498db;
+}
+    
+.ease {
+    width: 0px;
+    height: 74px;
+    background-color: #fbfbfb;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+    #form-div{
+        left: 3%;
+        margin-right: 3%;
+        width: 88%;
+        margin-left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+
+/*===================================HOME PAGE===========================================================*/
+element.style {
+}
+.hero-content h1 {
+display: table-cell;
+vertical-align: middle;
+font-size: 60px;
+font-weight: 300;
+line-height: 1.3;
+margin-left: -5px;
+color: #fff;
+}
+
+/**{
+    box-sizing: border-box;
+}*/
+
+.txt-rotate > .wrap {
+border-right: 0.08em solid #fff;
+}
+
+.hero-content h1 span{
+   color: #0fb5b3; 
+}
+.above-overlay {
+z-index: 4;
+position: relative;
+}
+
+.splash-page {
+background: url(http://media1.santabanta.com/full5/Global%20Celebrities\(F\)/Megan%20Fox/megan-fox-63a.jpg)   ;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.hero-image {
+height: 100%;
+width: 100%;
+position: relative;
+display: table;
+overflow: hidden;
+}
+
+:before, :after {
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+:before, :after {
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
